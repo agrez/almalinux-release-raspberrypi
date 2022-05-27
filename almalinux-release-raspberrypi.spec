@@ -1,13 +1,13 @@
 Summary: Raspberry Pi support packages from the AlmaLinux Core SIG repository
 Name:    almalinux-release-raspberrypi
-Version: 8
-Release: 2%{?dist}
+Version: 9
+Release: 1%{?dist}
 License: GPLv2
 URL:     https://wiki.almalinux.org/sigs/Core
 Source0: almalinux-raspberrypi.repo
 Source1: rootfs-expand
 
-Provides: almalinux-release-raspberrypi = 8
+Provides: almalinux-release-raspberrypi = 9
 
 %description
 yum configuration for Raspberry Pi support packages from the AlmaLinux Core SIG.
@@ -22,8 +22,5 @@ install -D -m 750 %{SOURCE1} %{buildroot}%{_bindir}/rootfs-expand
 %config(noreplace) %{_sysconfdir}/yum.repos.d/almalinux-raspberrypi.repo
 
 %changelog
-* Wed Oct 06 2021 Andrew Lukoshko <alukoshko@almalinux.org> - 8-2
-- Use mirrors for raspberrypi repo
-
-* Tue Sep 28 2021 Andrew Lukoshko <alukoshko@almalinux.org> - 8-1
+* Fri May 27 2022 Eduard Abdullin <eabdullin@almalinux.org> - 9-1
 - Initial version
