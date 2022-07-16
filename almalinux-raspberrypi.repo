@@ -6,7 +6,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/raspberrypi
 # baseurl=https://repo.almalinux.org/almalinux/$releasever/raspberrypi/$basearch/os/
 gpgcheck=1
 enabled=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9
 
 ## Sources
 [raspberrypi-source]
@@ -15,7 +15,7 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/raspberrypi-sour
 # baseurl=https://repo.almalinux.org/almalinux/$releasever/raspberrypi/Source/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9
 
 ## Debug
 [raspberrypi-debuginfo]
@@ -24,4 +24,4 @@ mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/raspberrypi-debu
 # baseurl=https://repo.almalinux.org/almalinux/$releasever/raspberrypi/debug/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9
